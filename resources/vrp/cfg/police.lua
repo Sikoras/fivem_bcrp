@@ -21,7 +21,9 @@ cfg.wanted = {
 -- illegal items (seize)
 cfg.seizable_items = {
   "dirty_money",
-  "weed"
+  "weed",
+  "cocaine",
+  "heroin"
 }
 
 -- jails {x,y,z,radius}
@@ -35,9 +37,21 @@ cfg.jails = {
 -- map of name -> money
 cfg.fines = {
   ["Speeding"] = 250,
-  ["Petty Theft"] = 500,
-  ["Theft of Property"] = 1000,
-  ["Grand Theft Auto"] = 15000
+  ["Brandishing a Firearm"] = 500,
+  ["Aggressive Driving"] = 250,
+  ["Disturbing the Peace"] = 100,
+  ["Failure to yield"] = 100,
+  ["Failure to Stop"] = 100,
+  ["Operation without a License"] = 500,
+  ["Non-street legal vehicle"] = 500,
+  ["Illegal Parking"] = 50,
+  ["Driving without headlights"] = 100,
+  ["Illegal U-Turn"] = 50,
+  ["Jaywalking"] = 50,
+  ["Loitering"] = 25,
+  ["Public Intoxication"] = 50,
+  ["Indecent Exposure"] = 50
+  
 }
 
 return cfg

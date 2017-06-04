@@ -46,10 +46,30 @@ cfg.hidden_transformers = {
       }
     },
     positions = {
-      {1873.36901855469,3658.46215820313,33.8029747009277},
-      {1856.33776855469,3635.12109375,34.1897926330566},
-      {1830.75390625,3621.44140625,33.8487205505371}
+      {2226.32397460938,5578.3203125,53.7372283935547}
     }
+  },
+  ["cocaine import"] = {
+  	  def = {
+	  	  name="Cocaine Import",
+		  -- permission = "harvest.water_bottle",
+		  r=0,g=200,b=0,
+		  max_units = 30,
+		  units_per_minute=1m
+		  x=0,y=0,z=0,
+		  radius=5, height = 1.5,
+		  action="Harvest",
+		  description="Harvest some cocaine",
+		  in_money=0,
+		  out_money=0,
+		  reagents={},
+		  products=={
+		  	  ["cocaine"] = 1
+		  }
+	  },
+	  positions = {
+	  	  {3372.4970703125,5183.51953125,1.46024107933044}
+	  }
   }
 }
 
@@ -59,7 +79,8 @@ cfg.hidden_transformer_duration = 5*24*60 -- 5 days
 -- configure the information reseller (can sell hidden transformers positions)
 cfg.informer = {
   infos = {
-    ["weed field"] = 20000
+    ["weed field"] = 20000,
+	["cocaine import"] = 20000
   },
   positions = {
     {1821.12390136719,3685.9736328125,34.2769317626953},
