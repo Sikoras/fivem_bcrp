@@ -1,0 +1,63 @@
+@font-face {
+    font-family: digital;
+    src: url("digital.ttf");
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.speedometer {
+    border-radius: 5%;
+    width: 200px;
+    height: 150px;
+	background-image: url("background.png");
+    background-color:rgba(0, 0, 0, 0.85);
+    border: 3px solid gray;
+}
+
+p {
+    margin: 0 auto;
+    font-family: digital;
+}
+
+#container {
+    min-height: 100%;
+}
+
+#speedcontainer {
+    position: absolute;
+    bottom: 150px;
+    right: 45px;
+}
+
+.speedLine1 {
+    position: absolute;
+	bottom: 60px;
+	right: 75px;
+	color: 00fff1;
+    font-size: 80px;
+}
+.unitLine1 {
+	position: absolute;
+	bottom: 114px;
+	right: 1px;
+    color: 00fff1;
+    font-size: 36px;
+}
+
+.speedLine2 {
+	position: absolute;
+	bottom: 9px;
+	right: 63px;
+    color: 00fff1;
+    font-size: 36px;
+}
+.unitLine2 {
+	position: absolute;
+	bottom: 14px;
+	right: 1px;
+    color: 00fff1;
+    font-size: 30px;
+}
