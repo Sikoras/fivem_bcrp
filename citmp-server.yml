@@ -1,1 +1,47 @@
-../../../Desktop/vRP Server/citmp-server.yml
+ListenPort: 30120
+
+PreParseResources:
+    - mapmanager
+
+AutoStartResources:
+    - chat
+    - spawnmanager
+    - baseevents
+    - rconlog
+    - hardcap # prevents the game from breaking
+    - san_andreas
+    - vrp
+    - voip
+    - simeonfix
+    - Captain14_Sheriff
+    - Captain14_LSPD
+    - frfuel
+    - handsup
+    - nocarjack
+    - lux_vehcontrol
+    - gui_speedometer
+
+# do change
+RconPassword: wtf231
+
+# configure this, please
+Hostname: Drifter's Test
+
+ScriptDebug: true
+
+DebugLog: true
+
+# set to false to hide from the online server list
+Announce: false
+
+# set to false to require players to be signed in to Steam
+DisableAuth: false
+
+# set to true to disable local script hook plugins
+DisableScriptHook: true
+
+# uncomment and set to the path of an icon to use in the server browser. it should be square.
+ServerIcon: hello.png
+
+# don't try enabling this
+#UseGameServerV2: true
